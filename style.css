@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 1.8vw;
+    min-height: 100vh;
+}
+
+.card {
+    width: 20rem;
+    background: linear-gradient(140deg, rgb(163, 163, 163), 
+    rgb(187, 187, 187), rgb(229, 229, 229), 
+    rgb(240, 239, 239));
+    border-radius: 1.6rem;
+    box-shadow: 0 .3rem .3rem rgba(0, 0, 0, 0.278);
+}
+
+.white-circle {
+    width: 3rem;
+    border-radius: 3rem;
+    background-color: white;
+    margin: 0 .5rem .3rem .7rem;
+}
+
+.grid-top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: .33rem
+}
+
+.name-data {
+    grid-column: span 2;
+    
+}
+.name-data h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.name-data p {
+    color: white;
+    font-size: .9rem;
+}
+
+.menu {
+    grid-column: 5 / 6;
+    text-align: end;
+    padding: 0 .4rem 1.2rem;
+    font-size: 1.8rem;
+}
+
+.icons {
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+    padding: 1rem 0 .2rem 1.2rem;
+    font-size: 1.4rem;
+}
+
+article {
+    padding: .3rem .4rem 3rem .6rem;
+}
+
+@media (max-width: 987px) {
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 10vh 5vw;
+    }
+    .card {
+        justify-self: center;
+        align-self: center;
+    }
+}
+@media (max-width: 650px) {
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 12vh 0 12vh;
+    }
+}
